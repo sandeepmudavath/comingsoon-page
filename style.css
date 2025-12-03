@@ -1,0 +1,261 @@
+html{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;  
+    padding: 0%;
+    margin: 0%;
+}
+
+.page-body{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .logo-set{
+    width:3rem;
+    height:3rem;
+    position: fixed;
+    left: 2rem;
+    top:2rem
+  }
+  
+  .flex-data{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .flex-body{
+    width: 30rem;
+    margin-bottom: 2rem;
+    align-items:start !important;     
+    }
+
+    .flex-body   div{
+        text-align: center;
+      }
+
+    .flex-body .title-name  h2{
+      color: #2098f5;
+      font-family: BeonMedium !important;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  
+    .title-intro .title-color{
+        color: #2098f5;
+      }
+    
+
+    .title-intro h2{
+        color: #fefeff;
+        font-family: latobold !important;
+        font-weight: normal;
+        font-size: 2em;
+        margin: 1rem;
+      }
+  
+    .rotate {
+      animation: rotation 1s infinite linear;
+    }
+  
+    @keyframes rotation {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg);
+      }
+    }
+  
+   .timer-view{
+    font-family: BeonMedium !important;
+    flex-direction: row;
+    width:100%;
+   }
+    .timer-view .timer-show{ 
+        width:4rem;
+        height: 6rem;
+    
+        flex-direction: column; 
+        align-items: center;
+     }
+        .timer-view .timer-show span{
+      
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 3rem;
+        color: #b3d4fc;
+        text-shadow: none;
+      }
+      .timer-view .timer-show p{
+        width: 100%;
+        text-align: center;
+        color: #b3d4fc;
+        margin-top: 1rem;
+      }
+    
+  
+      .timer-view .time-separate{
+      width: 1.5rem;
+      height: 7rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 1.5rem;
+      }
+      .timer-view .time-separate .radio-box{
+      width: 1rem;
+      height: 1.5rem;
+
+      }
+      .timer-view .time-separate .radio-box span{
+        display: inline-block;
+        width:0.5rem;
+        height:0.5rem;
+        border-radius:50% ;
+        background-color:#b3d4fc;
+      }
+      
+     
+    .sub-title{
+       color:#efefef;
+       font-size: 1.15em;
+    }
+  
+    .icon-size-increase{
+      color:white;
+      width:2rem;
+      height: 2rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bolder;
+    }
+
+
+    /* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-body {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Logo section */
+.logo-set img {
+  width: 4rem;
+  border-radius: 8px;
+}
+
+/* Main text section */
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+}
+
+.title-name h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.title-intro h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.title-color {
+  color: #ff3b3b;
+}
+
+/* Timer Section */
+.timer-view {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.timer-show {
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 80px;
+  text-align: center;
+}
+
+.timer-show span {
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  color: #333;
+}
+
+.timer-show p {
+  margin-top: 4px;
+  font-size: .85rem;
+  text-transform: capitalize;
+  color: #666;
+}
+
+/* Separator Dots */
+.time-separate {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.radio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-box span {
+  width: 8px;
+  height: 8px;
+  background: #444;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .timer-view {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .timer-show {
+    min-width: 70px;
+  }
+  .title-name h2 {
+    font-size: 1.6rem;
+  }
+  .title-intro h2 {
+    font-size: 1.4rem;
+  }
+}
+
+  
